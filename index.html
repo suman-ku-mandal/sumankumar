@@ -1,123 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Suman Kumar Mandal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Suman Kumar Mandal, a researcher in chemical sciences.">
+    <meta name="view-transition" content="same-origin" />
+    <title>Suman Kumar Mandal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <div class="background-animation"></div>
 
-  <!-- HERO ------------------------------------------------------------>
-  <header id="hero">
-    <h1 class="animate-pop">Suman Kumar Mandal</h1>
-    <p class="subtitle animate-pop delay-1">Chemistry Researcher | Integrated M.Sc. (NISER Bhubaneswar)</p>
-    <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})"
-            class="cta animate-pop delay-2">Explore My Work</button>
-  </header>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="research.html">Research</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light and dark mode">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
+        </header>
 
-  <!-- PHOTO UPLOAD ---------------------------------------------------->
-  <section id="photo" class="section">
-     <img src="images/retouch_2025020600283004.jpg" alt="My Photo" width="400">
-  </section>
+        <main class="main-content home-layout">
+            <div class="intro-content">
+                <h1 style="view-transition-name: main-title;">Suman Kumar Mandal</h1>
+                <h2>Aspiring Chemical Scientist | Researcher</h2>
+                <p>
+                    A dedicated and high-achieving 4th-year Integrated M.Sc. student at the National Institute of Science Education and Research (NISER), with a strong foundation in theoretical and practical chemistry. Passionate about computational chemistry, spectroscopy, and small molecule activation.
+                </p>
+                <div class="social-links">
+                    <a href="mailto:sumankumar.mandal@niser.ac.in" aria-label="Email Suman"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                    </div>
+            </div>
+            <div class="profile-image-container">
+                <img src="profile-photo.jpg" alt="Suman Kumar Mandal" class="profile-photo" style="view-transition-name: profile-pic;">
+            </div>
+        </main>
 
-  <!-- ABOUT ----------------------------------------------------------->
-  <section id="about" class="section">
-    <h2 class="section-title">About Me</h2>
-    <p class="lead">
-      4<sup>th</sup>-year Integrated M.Sc. chemistry student at
-      the National Institute of Science Education and Research (NISER), Bhubaneswar (HBNI),
-      passionate about photodissociation dynamics, organometallic catalysis, and high-performance‐computing driven
-      molecular simulations.
-    </p>
-  </section>
-
-  <!-- RESEARCH / CV --------------------------------------------------->
-  <section id="research" class="section">
-    <h2 class="section-title">Research & CV Highlights</h2>
-
-    <h3>Education</h3>
-    <ul class="timeline">
-      <li></span> Integrated M.Sc. (Chemistry), NISER Bhubaneswar – CGPA 8.80</li>
-      <li></span> +2 Science, Jhadeswar Residential College – 89 %</li>
-      <li></span> Schooling, Haraprasad Nodal U.P. School – 94.66 %</li>
-    </ul>
-
-    <h3>Internships</h3>
-    <div class="cards">
-      <div class="card">
-        <h4>NISER Bhubaneswar (2023)</h4>
-        <p>Photodissociation Dynamics of Methanol<br><em>Supervisor: Dr. Upakarasamy Lourderaj</em></p>
-      </div>
-      <div class="card">
-        <h4>CSIR-NCL Pune (2024)</h4>
-        <p>Small-Molecule Activation using a Tripodal Bi(III) Complex<br><em>Supervisor: Dr. Kumar Vanka</em></p>
-      </div>
+        <footer>
+            <p>&copy; 2024 Suman Kumar Mandal. All Rights Reserved.</p>
+        </footer>
     </div>
 
-    <h3>Skills</h3>
-    <ul class="skills">
-      <li>Spectroscopy: UV-Vis, IR, Mass, Fluorescence, NMR</li>
-      <li>Computational: Gaussian, SHARC, OpenMolcas, MOLPRO, CREST, XTB</li>
-      <li>Programming: Python | Linux & HPCC workflow</li>
-    </ul>
-
-    <h3>Achievements</h3>
-    <ul>
-      <li>DAE-DISHA Scholarship recipient</li>
-      <li>NEST AIR 105-cat</li>
-      <li>ICAR AIR 2358</li>
-      <li>NRTS District Rank 1</li>
-    </ul>
-
-    <h3>Extracurricular</h3>
-    <p>Creative writer (Odia & English), cricket enthusiast, swimmer, photographer, and avid chess player.</p>
-  </section>
-
-  <!-- FOOTER ---------------------------------------------------------->
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Suman Kumar Mandal</h4>
-                    <p>National Institute of Science Education and Research.</p>
-                </div>
-                <div class="footer-section">
-                    <h5>Quick Links</h5>
-                    <ul class="footer-links">
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#research">Research</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h5>Support</h5>
-                    <ul class="footer-links">
-                        <li><a href="#" target="_blank">Help Center</a></li>
-                        <li><a href="#" target="_blank">Documentation</a></li>
-                        <li><a href="#" target="_blank">Contact Support</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h5>Follow Us</h5>
-                    <div class="social-links">
-                        <a href="mailto:sumankumar.mandal@niser.ac.in">Email</a>
-                        <a href="#" target="_blank" class="social-link">Twitter</a>
-                        <a href="#" target="_blank" class="social-link">LinkedIn</a>
-                        <a href="#" target="_blank" class="social-link">GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy;@ 2025 Suman kumar Mandal. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-  <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
